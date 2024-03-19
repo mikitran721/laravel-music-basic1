@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+//bo sung
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ArticleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+Route::get('/', [HomeController::class, 'getAllArticles']);
+
+Route::resource('articles', ArticleController::class);
