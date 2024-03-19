@@ -24,3 +24,7 @@
     - run `php artisan make:seeder CategoryTableSeeder; php artisan make:seeder AuthorTableSeeder; php artisan make:seeder ArticleTableSeeder`
     - cap nhat noi dung SeederTable tuong ung voi noi dung can sinh auto;
     - chay Seeder: `php artisan db:seed --class=CategoryTableSeeder`
+
+# KIEN THUC
+
+-   Trong blade engine `asset()` se tu tro toi public folder
